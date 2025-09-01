@@ -4,7 +4,6 @@ class Books:
         self.books = []  
 
 
-
     def get_books(self): 
         return self.books
 
@@ -17,7 +16,8 @@ class Books:
     def get_single(self, item): 
         return [ i for i in self.books if i == item]
 
-
+    def search_book(self, item):
+        return list(filter(lambda x: x.title == item, self.books)) 
 
 BookStore = Books()
 

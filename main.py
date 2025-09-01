@@ -24,3 +24,5 @@ for book in data["docs"]:
 # print("this is the filter data single data", BookStore.delete_book('data5'))
 # print("this is deltting file man", BookStore.delete_book('data3'))
 print(BookStore.get_books())
+print(BookStore.search_book("python"))
+
